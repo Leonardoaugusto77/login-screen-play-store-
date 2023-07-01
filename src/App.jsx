@@ -30,16 +30,24 @@ export default function App() {
                 <button>Create account</button>
               </div>
               <div className="sign_up_button">
-                <button>
+                <button id="btn_google_login">
                   <span style={{ marginRight: "5px" }}>
-                    <FcGoogle size={35} />
+                    <FcGoogle size={30} />
                   </span>
                   <span>Sign up with Google</span>
                 </button>
               </div>
               <div className="text_forgetPassword">
                 <p>
-                  Already have an account? Log in <strong>Log in</strong>
+                  Already have an account? Log in{" "}
+                  <strong
+                    style={{
+                      textDecoration: "underline",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Log in
+                  </strong>
                 </p>
               </div>
             </div>

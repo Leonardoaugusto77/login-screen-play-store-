@@ -65,6 +65,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
 
 .sign_up_button {
@@ -79,8 +83,18 @@
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
 
+#btn_google_login {
+  background-color: #101727;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
 .sign_up_button button span:last-child {
   margin-left: 5px;
 }
