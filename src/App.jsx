@@ -1,4 +1,5 @@
 import Slider from "./Components/Slider";
+import { FcGoogle } from "react-icons/fc";
 
 export default function App() {
   return (
@@ -25,13 +26,16 @@ export default function App() {
             </div>
 
             <div className="action_buttons_section">
-              <div>
+              <div className="create_account_button">
                 <button>Create account</button>
               </div>
-
-              <div>
-                <span>ICON_GOOGLE</span>
-                <button>Sign up with Google</button>
+              <div className="sign_up_button">
+                <button>
+                  <span style={{ marginRight: "5px" }}>
+                    <FcGoogle size={35} />
+                  </span>
+                  <span>Sign up with Google</span>
+                </button>
               </div>
               <div className="text_forgetPassword">
                 <p>
