@@ -1,61 +1,20 @@
-import Slider from "./Components/Slider";
-import { FcGoogle } from "react-icons/fc";
+import GamesApi from "./GamesApi.json";
+import Form from "./Components/Form";
 
 export default function App() {
+  const games = GamesApi; // Renomeie para 'games' em vez de 'Games' (não precisa ser uma constante capitalizada)
+
   return (
     <>
       <div className="container_main">
-        <div className="form_section">
-          <div className="title_form">
-            <h1>Create an account</h1>
-            <p>and get access to the latest releases with unique discounts</p>
-          </div>
-
-          <form>
-            <div>
-              <span>Name</span>
-              <input type="text" />
-            </div>
-            <div>
-              <span>Email</span>
-              <input type="email" />
-            </div>
-            <div>
-              <span>Password</span>
-              <input type="password" />
-            </div>
-
-            <div className="action_buttons_section">
-              <div className="create_account_button">
-                <button>Create account</button>
-              </div>
-              <div className="sign_up_button">
-                <button id="btn_google_login">
-                  <span style={{ marginRight: "5px" }}>
-                    <FcGoogle size={30} />
-                  </span>
-                  <span>Sign up with Google</span>
-                </button>
-              </div>
-              <div className="text_forgetPassword">
-                <p>
-                  Already have an account? Log in{" "}
-                  <strong
-                    style={{
-                      textDecoration: "underline",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Log in
-                  </strong>
-                </p>
-              </div>
-            </div>
-          </form>
-        </div>
+        <Form />
 
         <div className="slider_section">
-          <Slider />
+          {games.map((item, index) => (
+            <div className="slider_item" key={index}>
+              <img src={item.src} alt="Imagens dos jogos" />
+            </div>
+          ))}
         </div>
       </div>
     </>
