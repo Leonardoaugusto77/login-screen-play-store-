@@ -7,9 +7,7 @@
 .container_main {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  height: 100vh;
 }
 
 .form_section {
@@ -21,7 +19,7 @@
 
 .title_form {
   width: 475px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form_section {
@@ -36,12 +34,15 @@
 }
 
 .form_elements input {
-  width: 350px;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  width: 470px;
 }
 
 .create_account_button button {
   display: flex;
-  width: 350px;
+  width: 470px;
   height: 45px;
   background-color: #101727;
   justify-content: center;
@@ -91,6 +92,28 @@
 
 #btn .sign_up_button button span:last-child {
   margin-left: 5px;
+}
+
+.login_action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+  margin-top: 17px;
+}
+
+.login_text {
+  width: 365px;
+
+  font-size: 15px;
+  text-align: center;
+}
+
+.login_action strong {
+  text-decoration: underline;
+}
+.login_action strong:hover {
+  cursor: pointer;
 }
 
 .text_forgetPassword {

@@ -3,6 +3,7 @@ import Form from "./Components/Form";
 
 export default function App() {
   const games = GamesApi;
+
   return (
     <>
       <div className="container_main">

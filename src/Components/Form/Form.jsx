@@ -13,18 +13,26 @@ export default function Form() {
         <form className="form_elements">
           <div>
             <span>Name</span>
-            <input type="text" />
+            <input type="text" placeholder="Name" />
           </div>
           <div>
             <span>Email</span>
-            <input type="email" />
+            <input type="email" placeholder="Email" />
           </div>
           <div>
             <span>Password</span>
-            <input type="password" />
+            <input type="password" placeholder="Password" />
           </div>
           <Buttons Text="Create account" />
           <Buttons Text="Sign up with Google" logo={FcGoogle} />
+
+          <div className="login_action">
+            <div className="login_text">
+              <p>
+                Already have an account? <strong>Log in</strong>
+              </p>
+            </div>
+          </div>
         </form>
       </div>
     </div>
