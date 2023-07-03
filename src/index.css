@@ -20,25 +20,8 @@
 }
 
 .title_form {
-  text-align: start;
+  width: 475px;
   margin-bottom: 20px;
-}
-
-.title_form h1 {
-  color: #000;
-  font-size: 40.552px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.title_form p {
-  color: #000;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 5px;
 }
 
 .form_section {
@@ -118,5 +101,5 @@
 
 .slider_item img {
   width: 500;
-  height: 500px;
+  height: 550px;
 }

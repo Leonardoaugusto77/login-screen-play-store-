@@ -1,4 +1,4 @@
-export default function Buttons({ Text, logo, logo: Logo }) {
+export default function Buttons({ Text, logo: Logo }) {
   return (
     <>
       <div className="action_buttons_section">
