@@ -48,21 +48,17 @@
   align-items: flex-start;
 }
 
-.action_buttons_section {
-  display: flex;
+.form_elements {
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
-.create_account_button {
-  display: flex;
-  justify-content: flex-start;
+
+.form_elements input {
+  width: 350px;
 }
 
 .create_account_button button {
   display: flex;
-  width: 65vh;
+  width: 350px;
   height: 45px;
   background-color: #101727;
   justify-content: center;
@@ -99,7 +95,7 @@
 }
 
 #btn_google_login {
-  width: 65vh;
+  width: 350px;
   color: #000000;
   border: none;
   border-radius: 3px;
@@ -121,6 +117,6 @@
 }
 
 .slider_item img {
-  width: 600;
-  height: 600px;
+  width: 500;
+  height: 500px;
 }

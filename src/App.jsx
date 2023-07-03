@@ -2,8 +2,7 @@ import GamesApi from "./GamesApi.json";
 import Form from "./Components/Form";
 
 export default function App() {
-  const games = GamesApi; // Renomeie para 'games' em vez de 'Games' (não precisa ser uma constante capitalizada)
-
+  const games = GamesApi;
   return (
     <>
       <div className="container_main">
