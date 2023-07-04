@@ -12,17 +12,16 @@ export default function Form() {
 
         <form className="form_elements">
           <div>
-            <span>Name</span>
             <input type="text" placeholder="Name" />
           </div>
           <div>
-            <span>Email</span>
             <input type="email" placeholder="Email" />
           </div>
           <div>
-            <span>Password</span>
+            <span className="focus_input" placeholder="Password"></span>
             <input type="password" placeholder="Password" />
           </div>
+
           <Buttons Text="Create account" />
           <Buttons Text="Sign up with Google" logo={FcGoogle} />
 
