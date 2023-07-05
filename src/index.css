@@ -43,6 +43,12 @@
   width: 470px;
 }
 
+.form_elements input::placeholder {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .create_account_button button {
   display: flex;
   width: 470px;
