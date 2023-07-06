@@ -5,6 +5,9 @@ import Welcome from "../Welcome/";
 
 export default function Form({ toggleSlider }) {
   const [isWelcomeVisible, setWelcomeVisible] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleButtonClick = () => {
     setWelcomeVisible(true);
@@ -14,6 +17,18 @@ export default function Form({ toggleSlider }) {
   const handleBackButton = () => {
     setWelcomeVisible(false);
     toggleSlider();
+  };
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
   };
 
   return (
@@ -29,14 +44,34 @@ export default function Form({ toggleSlider }) {
 
           <form className="form_elements">
             <div>
-              <input type="text" placeholder="Name" />
+              <input
+                type="text"
+                placeholder="Name"
+                value={name}
+                onChange={handleNameChange}
+                className={name ? "filled" : ""}
+              />
             </div>
+
             <div>
-              <input type="email" placeholder="Email" />
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={handleEmailChange}
+                className={email ? "filled" : ""}
+              />
             </div>
+
             <div>
               <span className="focus_input" placeholder="Password"></span>
-              <input type="password" placeholder="Password" />
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={handlePasswordChange}
+                className={password ? "filled" : ""}
+              />
             </div>
             <Buttons Text="Create account" Action={handleButtonClick} />
             <Buttons Text="Sign up with Google" logo={FcGoogle} />

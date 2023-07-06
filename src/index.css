@@ -43,12 +43,6 @@
   width: 470px;
 }
 
-.form_elements input::placeholder {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .create_account_button button {
   display: flex;
   width: 470px;
@@ -135,7 +129,70 @@
 .slider_section {
   margin-left: 30px;
 }
+
+.slider_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .slider_item img {
-  width: 500;
-  height: 550px;
+  width: 500px;
+  height: 500px;
+}
+
+.image_wrapper {
+  position: relative;
+}
+
+.title_game {
+  position: absolute;
+  right: 250px;
+  top: 15px;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.title_game p {
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.slider_buttons {
+  width: 100%;
+  margin-top: 10px;
+  position: absolute;
+  top: 380px;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.action_button_slider {
+  position: absolute;
+  top: 90px;
+  right: 120px;
+}
+
+.buttons_slider_action {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border: 5px solid #ffffff;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.buttons_slider_action:hover {
+  cursor: pointer;
 }
