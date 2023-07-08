@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 export default function Slider({ RequestApi }) {
@@ -21,6 +21,17 @@ export default function Slider({ RequestApi }) {
       (currentImageIndex - 1 + RequestApi.length) % RequestApi.length;
     setCurrentImageIndex(previousIndex);
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const nextIndex = (currentImageIndex + 1) % RequestApi.length;
+      setCurrentImageIndex(nextIndex);
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentImageIndex, RequestApi.length]);
 
   return (
     <div className="slider_section">

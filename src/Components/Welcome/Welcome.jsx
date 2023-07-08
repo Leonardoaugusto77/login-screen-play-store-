@@ -9,7 +9,7 @@ export default function Welcome({ Action }) {
 
   return (
     <>
-      <div style={StyledWelcome}>
+      <div style={StyledWelcome} className="title_welcome">
         <h2
           style={{
             fontSize: "45px",

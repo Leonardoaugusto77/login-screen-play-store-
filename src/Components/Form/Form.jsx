@@ -10,6 +10,12 @@ export default function Form({ toggleSlider }) {
   const [password, setPassword] = useState("");
 
   const handleButtonClick = () => {
+    if (name === "" || email === "" || password === "") {
+      return window.alert(
+        "Os Campos foram preenchidos incorretamente, verifique e tente novamente!"
+      );
+    }
+
     setWelcomeVisible(true);
     toggleSlider();
   };
@@ -19,71 +25,75 @@ export default function Form({ toggleSlider }) {
     toggleSlider();
   };
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
+  const handleNameChange = (e) => {
+    setName(e.target.value);
   };
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
   };
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
   };
 
   return (
-    <div>
+    <div className="container_main">
       {isWelcomeVisible ? (
         <Welcome Action={handleBackButton} />
       ) : (
-        <div className="form_section">
-          <div className="title_form">
-            <h1>Create an account</h1>
-            <p>and get access to the latest releases with unique discounts</p>
-          </div>
-
-          <form className="form_elements">
-            <div>
-              <input
-                type="text"
-                placeholder="Name"
-                value={name}
-                onChange={handleNameChange}
-                className={name ? "filled" : ""}
-              />
+        <div className="form_container">
+          <div className="form_section">
+            <div className="title_form">
+              <h1>Create an account</h1>
+              <p>and get access to the latest releases with unique discounts</p>
             </div>
 
-            <div>
-              <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={handleEmailChange}
-                className={email ? "filled" : ""}
-              />
-            </div>
-
-            <div>
-              <span className="focus_input" placeholder="Password"></span>
-              <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={handlePasswordChange}
-                className={password ? "filled" : ""}
-              />
-            </div>
-            <Buttons Text="Create account" Action={handleButtonClick} />
-            <Buttons Text="Sign up with Google" logo={FcGoogle} />
-
-            <div className="login_action">
-              <div className="login_text">
-                <p>
-                  Already have an account? <strong>Log in</strong>
-                </p>
+            <form className="form_elements">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  value={name}
+                  onChange={handleNameChange}
+                  className={name ? "filled" : ""}
+                />
               </div>
-            </div>
-          </form>
+
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={handleEmailChange}
+                  className={email ? "filled" : ""}
+                />
+              </div>
+
+              <div>
+                <span className="focus_input" placeholder="Password"></span>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={handlePasswordChange}
+                  className={password ? "filled" : ""}
+                />
+              </div>
+
+              <div className="login_action">
+                <div className="login_text">
+                  <div className="button_container">
+                    <Buttons Text="Create account" Action={handleButtonClick} />
+                    <Buttons Text="Sign up with Google" logo={FcGoogle} />
+                  </div>
+                  <p id="login_description">
+                    Already have an account? <strong>Log in</strong>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       )}
     </div>

@@ -1,27 +1,27 @@
 [
   {
-    "name": "Resident evil 04 Ramake TESTE 00 ",
+    "name": "Resident evil 4 Ramake",
     "year": "23 de Março de 2023",
-    "src": "./Imgs/ac.png"
+    "src": "./Imgs/resident_evil_04_remake.png"
   },
   {
-    "name": "Resident evil 04 Ramake teste 01",
-    "year": "23 de Março de 2023",
-    "src": "./Imgs/ac.png"
+    "name": "Red Dead Redemption 2",
+    "year": "26 de outubro de 2018",
+    "src": "./Imgs/red_dead.png"
   },
   {
-    "name": "Resident evil 04 Ramake TESTE 02",
-    "year": "23 de Março de 2023",
-    "src": "./Imgs/ac.png"
+    "name": "God of War Ragnarok",
+    "year": "9 de novembro de 20223",
+    "src": "./Imgs/god_of_war_ragnarok.jpg"
   },
   {
-    "name": "Resident evil 04 Ramake TESTE 03",
-    "year": "23 de Março de 2023",
-    "src": "./Imgs/ac.png"
+    "name": "Dead Space",
+    "year": "27 de janeiro de 2023",
+    "src": "./Imgs/dead.jpg"
   },
   {
-    "name": "Resident evil 04 Ramake TESTE 04",
-    "year": "23 de Março de 2023",
-    "src": "./Imgs/ac.png"
+    "name": "Star Wars Jedi Survivor",
+    "year": "28 de abril de 2023",
+    "src": "./Imgs/star-wars-jedi-survivor-1.png"
   }
 ]
