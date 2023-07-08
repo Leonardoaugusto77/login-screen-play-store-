@@ -10,13 +10,7 @@ export default function Welcome({ Action }) {
   return (
     <>
       <div style={StyledWelcome} className="title_welcome">
-        <h2
-          style={{
-            fontSize: "45px",
-          }}
-        >
-          Welcome!!!
-        </h2>
+        <h2>Welcome!!!</h2>
         <p>
           This project is a training exercise focused on UX and React.js. The
           main objective of the project is to create a login screen.
